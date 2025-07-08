@@ -1,0 +1,18 @@
+The user data is provided in JSON formats.
+
+Each json file corresponds to the data of one participant.
+
+fifty:
+A 2D list of shape 3 * 8 in the below format. e and i stand for "external device" and "IMD". For each of the nine vibration conditions, each participant performs 4 runs during the user study.
+
+          e_run1  i_run1  e_run2  i_run2  e_run3  i_run3  e_run4  i_run4
+400ms   |   []
+700ms   |   []
+1000ms  |   [] 
+
+Each element in fifty is a 1D list of peak locations (in Hz) in the shape of 1 * 5 (five cycles were collected per run). 
+
+The other two lists "sevenfive" and "onehundard" follow the same structure as "fifty". 
+
+id:
+This is an integer indicating the participant ID.
